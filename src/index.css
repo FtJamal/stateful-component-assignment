@@ -1,0 +1,36 @@
+ body ,.room {
+  text-align: center;
+  /* height: 100%; */
+  /* margin: 0;
+   */
+   background-color: black;
+}
+.green{
+  color: green;
+  font-size: 40px;
+
+}
+.red{
+  color: red;
+  font-size: 40px;
+}
+button{
+ border-radius: 200px; 
+ margin: 5px;
+ padding: 3px,10px,3px,10px;
+
+}
+.true {
+  background-color: white;
+  /* color: black; */
+}
+.false{
+  background-color: black;
+  /* color: white; */
+}
+Room{
+  background-color: black;
+}
+p{
+  color: aliceblue;
+}
