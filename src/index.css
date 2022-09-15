@@ -1,36 +1,41 @@
- body ,.room {
-  text-align: center;
-  /* height: 100%; */
-  /* margin: 0;
-   */
-   background-color: black;
-}
-.green{
-  color: green;
-  font-size: 40px;
+ body,
+ .room {
+   text-align: center;
+  }
+ .body {
+   display: flex;
+   justify-content: center;
+ }
+ .main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border: 2px solid darkgrey;
+   margin-top: 100px;
+   width: 320px;
+   height: 90 vh;
+   height: 290px;
+   border-radius: 35px;
+   background: lightgrey;
+   box-shadow: 0px 0px 20px 5px black;
+ }
+ p{
+  font-size: 25px;
+ }
 
-}
-.red{
-  color: red;
-  font-size: 40px;
-}
-button{
- border-radius: 200px; 
- margin: 5px;
- padding: 3px,10px,3px,10px;
+ button {
 
-}
-.true {
-  background-color: white;
-  /* color: black; */
-}
-.false{
-  background-color: black;
-  /* color: white; */
-}
-Room{
-  background-color: black;
-}
-p{
-  color: aliceblue;
-}
+   border-radius: 100%;
+   margin: 5px;
+   padding: 10px;
+ }
+ .plus:hover{
+  box-shadow: 1px 0px 10px 2px green;
+  padding: 13px;
+ }
+ .minus:hover{
+  box-shadow: 1px 0px 10px 2px red;
+ }
+ 
+ 

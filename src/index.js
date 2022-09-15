@@ -6,39 +6,18 @@ import { faPlus, faMinus} from '@fortawesome/free-solid-svg-icons'
 import './index.css';
 
 
-
-const Light = () => {
-  const [isOn, setOff] = useState(false);
+const Temperature = () => {
+  const [isTemp, setTemp] = useState(33);
   return (
-    <div className={`room ${isOn ? "true" : "false"}`}>
-      <p>please turn on the light {isOn}</p>
+    <div className='body'>
+    <div className='main'>
+      <p>Room temperature is<b> {isTemp} </b></p>
       <br />
-      <div className='button'>
-        <button onClick={() => setOff(true)} className="green" >ON</button>
-        <button onClick={() => setOff(false)} className="red">OFF</button>
-        </div>
-        <br/>
-        <div>
-          temperature is 33 celsius
-        </div>
-      </div>
-    
-  )
-}
-const Room = () => {
-  const [isLit, setLit] = useState(33);
-  return (
-    <div>
-      <p>Room temperature is {isLit}</p>
-      <br />
-      <button onClick={() => setLit(isLit + 1)}><FontAwesomeIcon icon={faPlus} color="green" fontSize="25px" /></button>
-      <button onClick={() => setLit(isLit - 1)}><FontAwesomeIcon icon={faMinus} color="blue" fontSize="25px" /></button>
+      <button onClick={() => setTemp(isTemp + 1)} className="plus" ><FontAwesomeIcon icon={faPlus} color="green" fontSize="35px" /></button>
+      <button onClick={() => setTemp(isTemp - 1)} className="minus"><FontAwesomeIcon icon={faMinus} color="red" fontSize="35px" /></button>
+    </div>
     </div>
   )
 };
 
-ReactDOM.render(
-  <>
-    <Light />
-    <Room />
-  </>, document.querySelector("#root"))
+ReactDOM.render(<Temperature />, document.querySelector("#root"))
